@@ -1,103 +1,104 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div class="blackout-header-image">
-                <div class="header-shadow1">
-                    <div class="header-shadow2">
-                         <div class="head">
-                            <div class="logo-block">
-                                <a href="index.html"><img src="images/logo.png" class="logo"/></a>
-                            </div>
-                            <table class="head-items">
-                                <tr>
-                                    <th><a href="#">plants</a></th>
-                                    <th><a href="#">gift cards</a></th>
-                                    <th><a href="#">installation</a></th>
-                                    <th><a href="#">delivery</a></th>
-                                    <th><a href="#">instagram</a></th>
-                                    <th><a href="#">cart</a></th>
-                                </tr>
-                            </table>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="title" content="Inspire in your Plants.">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div id="podlogka"></div> 
+    <header>
+        <div class="blackout-header-image">
+            <div class="header-shadow1">
+                <div class="header-shadow2">
+                    <div class="head">
+                        <div class="logo-block">
+                            <a href="index.html"><img src="images/logo.png" class="logo" /></a>
                         </div>
+
+                        <nav>
+                            <a href="#">plants</a>
+                            <a href="#">gift cards</a>
+                            <a href="#">installation</a>
+                            <a href="#">delivery</a>
+                            <a href="#">instagram</a>
+                            <a href="#">cart</a>
+                        </nav>
                     </div>
                 </div>
             </div>
-            <div class="hours-shadow1">
-                <div class="hours-shadow2">
-                    <div class="hours-block">
-                        <div class="line-interval-hours">
-                            <span id="hours">hours:</span>
-                            <span id="days">
-                                mon - tue: closed<br>
-                                wed - fri: 10am - 5pm<br>
-                                sun - sat: 9am - 5pm
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-us-shadow1">
-                <div class="contact-us-shadow2">
-                    <div class="contact-us-block">
-                        <span id="phone-number">
-                            +614*********<br>
-                            +614*********
+        </div>
+        <div class="hours-shadow1">
+            <div class="hours-shadow2">
+                <div class="hours-block">
+                    <div class="line-interval-hours">
+                        <span id="hours">hours:</span>
+                        <span id="days">
+                            mon - tue: closed<br>
+                            wed - fri: 10am - 5pm<br>
+                            sun - sat: 9am - 5pm
                         </span>
-                        
-                        <button class="button" id="call-me" type="button">Call me now!</button>
-                            <form id="call-me-form" method="post" action="">
-                                <section class="input-section">
-                                    <label for="name">Your name</label>
-                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
-                                </section>
-                                <section class="input-section">        
-                                    <label for="phone">Your mobile phone</label>
-                                    <input type="text" id="phone" name="phone" placeholder="+614 77 777 77 77" required>
-                                </section>
-                                <input type="submit" class="button2">
-                                <span id="close">Close</span>
-                            </form>
                     </div>
                 </div>
             </div>
-            <div class="adress-shadow1">
-                <div class="adress-shadow2">
-                    <div class="adress-block">
-                        <span class="adress">visit our shop:</span><br>
-                        <span class="adress-too">bailey's corner,<br>east row & london circuit,<br>canberra</span>
-                    </div>
+        </div>
+        <div class="contact-us-shadow1">
+            <div class="contact-us-shadow2">
+                <div class="contact-us-block">
+                    <span id="phone-number">
+                        +614*********<br>
+                        +614*********
+                    </span>
+
+                    <button class="button" id="call-me" type="button">Call me now!</button>
+                    <form id="call-me-form" method="post" action="">
+                        <section class="input-section">
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </section>
+                        <section class="input-section">
+                            <label for="phone">Your mobile phone</label>
+                            <input type="text" id="phone" name="phone" placeholder="+614 77 777 77 77" required>
+                        </section>
+                        <input type="submit" class="button2">
+                        <span id="close">Close</span>
+                    </form>
+                    
                 </div>
             </div>
-        </header>
-        <div class="middle-white-block">
-            <div class="content-block1">
-                <span class="some-text-stuff">Our mission is to inspire people to bring more of the outdoors in, and to make owning and caring for houseplants fun and accessible! </span>
-                <table class="flowers-images">
-                    <tr>
-                        <td colspan="2" class="table-text-item"><span class="table-text">Plants can take you somewhere else. They can transport you to a tropical island, an arid desert landscape or a jungle canopy.</span></td>
-                    </tr>
-                    <tr>
-                        <td class="table-item1"></td>
-                        <td rowspan="2" class="table-item3"></td>
-                    </tr>
-                    <tr>
-                        <td class="table-item2"></td>
-                    </tr>
-                </table>
+        </div>
+        <div class="adress-shadow1">
+            <div class="adress-shadow2">
+                <div class="adress-block">
+                    <span class="adress">visit our shop:</span><br>
+                    <span class="adress-too">bailey's corner,<br>east row & london circuit, canberra</span>
+                </div>
             </div>
-           <table class="content-block2">
-               <tr>
-                    <td class="green-item-content2"><span class="invite">Invite a friend and take $5 off!</span>
-                        <span class="send">Send a friend 20% off their first purchase over $50 and take $5 off.</span></td>
-                    <td class="grey-item-content2"></td>
-               </tr>
+        </div>
+    </header>
+    <div class="middle-white-block">
+            <span class="some-text-stuff">Our mission is to inspire people to bring more of the outdoors in, and to
+                make owning and caring for houseplants fun and accessible! </span>
+            <table class="flowers-images">
+                <tr>
+                    <td colspan="2" class="table-text-item"><span class="table-text">Plants can take you somewhere
+                            else. They can transport you to a tropical island, an arid desert landscape or a jungle
+                            canopy.</span></td>
+                </tr>
+                <tr>
+                    <td class="table-item1"></td>
+                    <td rowspan="2" class="table-item3"></td>
+                </tr>
+                <tr>
+                    <td class="table-item2"></td>
+                </tr>
             </table>
         </div>
+    <footer>
         <div class="bottom-grey-block">
             <ul class="list1">
                 <li><a href="#">about us</a></li>
@@ -112,18 +113,30 @@
                 <li><a href="#">privacy policy</a></li>
             </ul>
         </div>
-    </body>
-    <script>
+    </footer>
+</body>
+<script>
     var button = document.getElementById("call-me");
-button.addEventListener("click", showForm);
+    button.addEventListener("click", showForm);
 
-function showForm()
-{
-    var form = document.getElementById("call-me-form");
-    form.style.display = "block";
-    var closeButton = document.getElementById("close").addEventListener("click", function(){
-        form.style.display = "none";
-    });
-}
+    function showForm() {
+        var form = document.getElementById("call-me-form");
+        form.style.display = "block";
+        var closeButton = document.getElementById("close").addEventListener("click", function () {
+            form.style.display = "none";
+        });
+    }
 </script>
+<script>
+    jQuery(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $("#call-me-form"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			div.hide(); // скрываем его
+		}
+	});
+});
+</script>
+
 </html>
