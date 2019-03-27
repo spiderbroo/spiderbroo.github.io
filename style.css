@@ -275,6 +275,7 @@ p {
     width: 60%;
     border: 0;
     font-size: 100%;
+    
 }
 
 .button:hover,
@@ -356,12 +357,11 @@ p {
 }
 
 .flowers-images {
-    margin-top: 15%;
     border-collapse: separate;
     border-spacing: 50px;
     height: 900px;
     width: 95%;
-    margin: 0 auto;
+    margin: 15% auto;
     position: relative;
 }
 
