@@ -297,13 +297,14 @@ p {
     background-color: #e6e6e6;
     display: none;
     position: fixed;
-    z-index: 2;
-    top: 25%;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 0 auto;
     width: 300px;
     border-radius: 10px;
     padding: 40px;
-    right: 25%;
 }
 
 .input-section {
@@ -335,6 +336,15 @@ p {
 
 #close:hover {
     color: rgb(17, 119, 85);
+}
+#podlogka {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 5;
+    display: none;
+    position: fixed;
 }
 .middle-white-block {
     background-color: white;
@@ -574,9 +584,6 @@ li>a:hover {
         position: absolute;
     } 
     #call-me-form {
-        display: block;
-        left: 10%;
-        margin: 0 auto;
         width: 200px
     }
     #call-me {
