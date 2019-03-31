@@ -1,7 +1,5 @@
 body {
     margin: 0;
-    padding: 0;
-    max-width: 1500px;
     ;
 }
 
@@ -348,7 +346,7 @@ p {
 }
 .middle-white-block {
     background-color: white;
-    height: 1300px;
+    height: 1450px;
     width: 100%;
     position: relative;
 }
