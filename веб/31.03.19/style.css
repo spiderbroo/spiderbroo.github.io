@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+.wrap {
+    background-color: rgb(237, 255, 172);
+    height: 300px;
+    width: 100%;
+    position: relative;
+    border: 2px solid #000;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.wrap div {
+    background-color: aqua;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+}
+.wrap div:nth-child(2n) {
+    background-color: rgb(179, 0, 0);
+}
+.wrap div:nth-child(4) {
+    transform: matrix(1, 0, 0, 1, 1, 1)
+}
+.wrap::before,
+.wrap::after {
+    background-color: rgb(237, 255, 172);
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    border-bottom: 2px solid #000;
+}
+.wrap::before {
+    right: 50%;
+    transform: skew(0, 20deg); 
+}
+.wrap::after {
+    left: 50%;
+    transform: skew(0, -20deg)
+}
