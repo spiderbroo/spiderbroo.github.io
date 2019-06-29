@@ -488,7 +488,7 @@
 }
 
 .summerslide:nth-of-type(2) {
-    background-image: url(Images/summerslide2.jpg));
+    background-image: url(Images/summerslide2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -534,6 +534,8 @@ footer {
     .recall {
         position: absolute;
         left: 5%;
+        height: 35px;
+        font-size: 11px;
         bottom: 30px
     }
     .phone {
@@ -542,10 +544,10 @@ footer {
         font-size: 20px
     }
     .content {
-        height: 1800px;
+        height: 1300px;
     }
     .recall-me-form {
-        top: 0px;
+        top: -28px !important;
         left: 5% !important;
         border-radius: 0 10px 20px 10px !important;
     }
@@ -572,7 +574,7 @@ footer {
         right: -130%;
     }
     .content-banner {
-        top: 250px;
+        top: 199px;
     }
     .events-boxes {
         top: 270px;
