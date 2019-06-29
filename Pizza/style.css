@@ -626,12 +626,10 @@ footer {
     }
     .cart-icon {
         width: 50px;
-        left: 75%;
+        left: 77%;
     }
     .cart-icon span {
-        top: 50px;
-        left: 2px;
-        font-size: 15px
+        display: none;
     }
     .logo {
         left: 10%;
