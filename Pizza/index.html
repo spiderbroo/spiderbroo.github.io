@@ -29,27 +29,27 @@
             <input type="submit" class="button2">
             <span id="close">Close</span>
         </form>
-        
-        <div class="cart-icon" ><span>Корзина<br>пуста</span></div>
-            <div class="mi-wrapper">
-                <div class="menu-icon" id="menu-i">
+
+        <div class="cart-icon"><span>Корзина<br>пуста</span></div>
+        <div class="mi-wrapper"  >
+            <div class="menu-icon" id="menu-i" onclick="openbox('mobilemenu'); return false">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
-                <ul class="mobile-menu">
-                    <li><a href="#">Летнее меню</a></li>
-                    <li><a href="Sushi/index.html">Суши</a></li>
-                    <li><a href="#">Салаты</a></li>
-                    <li><a href="#">Супы</a></li>
-                    <li><a href="#">Закуски</a></li>
-                    <li><a href="#">Сэндвичи</a></li>
-                    <li><a href="#">Десерты</a></li>
-                    <li><a href="#">Напитки</a></li>
-                </ul>
-                </div>
             </div>
+            <ul class="mobile-menu" id="mobilemenu" style="display: none;">
+                <li><a href="#">Летнее меню</a></li>
+                <li><a href="Sushi/index.html">Суши</a></li>
+                <li><a href="#">Салаты</a></li>
+                <li><a href="#">Супы</a></li>
+                <li><a href="#">Закуски</a></li>
+                <li><a href="#">Сэндвичи</a></li>
+                <li><a href="#">Десерты</a></li>
+                <li><a href="#">Напитки</a></li>
+            </ul>
+        </div>
         <nav class="menu">
-            
+
             <div class="menu-items">
                 <ul>
                     <li><a href="#">Летнее меню</a></li>
@@ -142,7 +142,6 @@
                 $(this).toggleClass("animate");
             });
         });
-        
     </script>
     <script>
         var slides = document.querySelectorAll('#slides .slide');
@@ -157,25 +156,35 @@
     </script>
     <script>
         var summerslides = document.querySelectorAll('#summerslides .summerslide');
-var currentSummerSlide = 0;
-var summerslideInterval = setInterval(nextSummerSlide, 3000);
+        var currentSummerSlide = 0;
+        var summerslideInterval = setInterval(nextSummerSlide, 3000);
 
-function nextSummerSlide() {
-    summerslides[currentSummerSlide].className = 'summerslide';
-    currentSummerSlide = (currentSummerSlide + 1) % summerslides.length;
-    summerslides[currentSummerSlide].className = 'summerslide summershowing';
-}
+        function nextSummerSlide() {
+            summerslides[currentSummerSlide].className = 'summerslide';
+            currentSummerSlide = (currentSummerSlide + 1) % summerslides.length;
+            summerslides[currentSummerSlide].className = 'summerslide summershowing';
+        }
     </script>
     <script>
         var sslides = document.querySelectorAll('#sslides .sslide');
-var currentSSlide = 0;
-var sslideInterval = setInterval(nextSSlide, 3000);
+        var currentSSlide = 0;
+        var sslideInterval = setInterval(nextSSlide, 3000);
 
-function nextSSlide() {
-    sslides[currentSSlide].className = 'sslide';
-    currentSSlide = (currentSSlide + 1) % sslides.length;
-    sslides[currentSSlide].className = 'sslide sshowing';
-}
+        function nextSSlide() {
+            sslides[currentSSlide].className = 'sslide';
+            currentSSlide = (currentSSlide + 1) % sslides.length;
+            sslides[currentSSlide].className = 'sslide sshowing';
+        }
+    </script>
+    <script>
+        function openbox(mobilemenu) {
+            display = document.getElementById('mobilemenu').style.display;
+            if (display == 'none') {
+                document.getElementById('mobilemenu').style.display = 'block';
+            } else {
+                document.getElementById('mobilemenu').style.display = 'none';
+            }
+        }
     </script>
 </body>
 

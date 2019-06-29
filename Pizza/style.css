@@ -70,11 +70,16 @@
     border: none;
     width: 180px;
     cursor: pointer;
+    border-radius: 5px;
+    box-shadow: inset rgb(110, 173, 97) 2px 6px 10px,
+                inset rgb(32, 73, 13) -6px -10px 10px;
     transition: 500ms;
 }
 
 .recall:hover {
-    background-color: rgb(64, 173, 173)
+    background-color: rgb(64, 173, 173);
+    box-shadow: inset rgb(162, 213, 219) 2px 6px 10px,
+    inset rgb(15, 95, 84) -6px -10px 10px;
 }
 #recall-me-form {
     left: 9%;
@@ -121,11 +126,16 @@
     font-size: 16px;
     border: none;
     color: #f3f0f0;
+    border-radius: 5px;
+    box-shadow: inset rgb(110, 173, 97) 2px 6px 10px,
+                inset rgb(32, 73, 13) -6px -10px 10px;
     transition: 500ms
 }
 
 .button2:hover {
     background-color: rgb(64, 173, 173);
+    box-shadow: inset rgb(162, 213, 219) 2px 6px 10px,
+                inset rgb(15, 95, 84) -6px -10px 10px;
 }
 
 .cart-icon {
@@ -235,6 +245,9 @@
     -ms-transform: rotate(45deg)translate(11px, -8px);
     transform: rotate(45deg)translate(11px, -8px);
 
+}
+.mobile-menu a {
+    display: none;
 }
 
 .content-banner {
@@ -520,6 +533,10 @@ footer {
 .footer-list a {
     text-decoration: none; 
     color: rgb(255, 255, 255);
+    transition: 500ms;
+}
+.footer-list a:hover {
+    color: #f09f54
 }
 @media screen and (max-width: 1060px) {
     .header {
@@ -558,6 +575,7 @@ footer {
         right: 0px;
         width: 25%;
         height: 100px;
+        border-radius: 50px 0 0 50px;
     }
     .menu-icon {
         display: block;
@@ -566,6 +584,31 @@ footer {
         transform: translate(-50%, -50%);
         position: relative;
         float: left;
+    }
+    .mobile-menu {
+        position: absolute;
+        background-color: #ebebeb;
+        width: 100%;
+        top: 100px;
+        display: none;
+        text-align: center;
+        box-shadow: -10px 10px 30px rgb(105, 105, 105);
+        
+    }
+    .mobile-menu li {
+        display: block;
+        margin: 10px 0;
+        
+
+    }
+    .mobile-menu a {
+        display: inline;
+        text-decoration: none;
+        color: rgb(207, 117, 0);
+        transition: 500ms
+    }
+    .mobile-menu a:hover {
+        color: rgb(83, 56, 21)
     }
     .cart-icon {
         top: 30px;
@@ -583,6 +626,9 @@ footer {
 @media screen and (max-width: 960px) {
     .events-boxes {
         height: 1000px;
+    }
+    .content {
+        height: 1800px;
     }
     .sales {
         left: 50%;
@@ -642,6 +688,13 @@ footer {
         width: 90%;
         height: 350px;
     }
+    .phone {
+        font-size: 14px;
+    }
+    .recall {
+        width: 140px;
+        font-size: 9px
+    }
     .stripe1 {
         left: 7%;
         height: 670px;
@@ -652,6 +705,10 @@ footer {
     }
     .content-banner span {
         font-size: 50px;
+    }
+    .mi-wrapper {
+        width: 120px;
+        
     }
     .content {
         height: 1600px;
