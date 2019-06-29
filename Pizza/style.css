@@ -523,7 +523,7 @@ footer {
 }
 @media screen and (max-width: 1060px) {
     .header {
-        height: 250px;
+        height: 200px;
     }
     .menu {
         display: none;
@@ -534,10 +534,10 @@ footer {
     .recall {
         position: absolute;
         left: 5%;
-        top: 0;
+        bottom: 30px
     }
     .phone {
-        bottom: 10px;
+        bottom: 40px;
         left: 5%;
         font-size: 20px
     }
@@ -613,7 +613,8 @@ footer {
         top: 10px
     }
     .logo {
-        width: 15%;
+        width: 13%;
+        bottom: 20px;
     }
 }
 @media screen and (max-width: 620px) {
