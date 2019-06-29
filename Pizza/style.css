@@ -1,0 +1,674 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    height: 180px;
+    background-color: rgb(80, 72, 72);
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    z-index: 10;
+    bottom: 10px;
+    left: 20px;
+    width: 10%;
+    height: 150px;
+    background-image: url(Images/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.logo div {
+    position: relative;
+    bottom: 20px;
+    right: 50px;
+}
+
+.phone {
+    position: relative;
+    bottom: 130px;
+    left: 200px;
+    font-size: 27px;
+    color: rgb(245, 245, 245);
+    font-weight: bold;
+    letter-spacing: 2px
+}
+.calls {
+    display: block;
+    position: relative;
+    width: 120px;
+    bottom: 100px;
+    left: 450px;
+    color: rgb(245, 245, 245);
+}
+
+#recall {
+    display: block;
+    position: relative;
+}
+
+.recall {
+    left: 245px;
+    bottom: 120px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(245, 245, 245);
+    letter-spacing: 2px;
+    height: 45px;
+    background-color: green;
+    border: none;
+    width: 180px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.recall:hover {
+    background-color: rgb(64, 173, 173)
+}
+#recall-me-form {
+    left: 9%;
+    bottom: 65%;
+    background-color: #f3f0f0;
+    display: none;
+    position: relative;
+    z-index: 5;
+    width: 250px;
+    border-radius: 20px 0 10px 10px;
+    padding: 20px 40px 20px 30px;
+}
+
+.input-section {
+    display: block;
+}
+
+.input-section input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 5px;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#close {
+    display: inline-block;
+    margin-left: 5px;
+    font-family: sans-serif;
+    color: #000000;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: green;
+    width: 100px;
+    height: 35px;
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    border: none;
+    color: #f3f0f0;
+    transition: 500ms
+}
+
+.button2:hover {
+    background-color: rgb(64, 173, 173);
+}
+
+.cart-icon {
+    width: 7%;
+    position: absolute;
+    top: 15%;
+    right: 13%;
+    height: 100px;
+    background-image: url(Images/cart-empty.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cart-icon span {
+    display: block;
+    width: auto;
+    right: -100%;
+    top: 18%;
+    position: absolute;
+    font-size: 20px;
+    color: rgb(240, 156, 61);
+}
+
+.menu {
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(102, 95, 95)
+}
+
+.menu ul {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+}
+
+.menu li {
+    height: 50px;
+    margin: 0 20px;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 15px 0 0 0;
+    color: rgb(240, 156, 61);
+    height: 35px;
+    transition-duration: 500ms;
+}
+
+.menu a:hover {
+    color: rgb(255, 213, 97);
+}
+
+.menu-icon {
+    display: none;
+    height: 24px;
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+}
+
+.menu-icon>div {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(223, 137, 25);
+    margin-bottom: 6px;
+    transition: .4s ease;
+}
+
+.menu-icon .bar3 {
+    margin-bottom: 0;
+}
+
+.animate .bar1 {
+    -webkit-transform: rotate(-45deg)translate(-11px, 8px);
+    -moz-transform: rotate(-45deg)translate(-11px, 8px);
+    -o-transform: rotate(-45deg)translate(-11px, 8px);
+    -ms-transform: rotate(-45deg)translate(-11px, 8px);
+    transform: rotate(-45deg)translate(-11px, 8px);
+}
+
+.animate .bar2 {
+    opacity: 0;
+}
+
+.animate .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -4px);
+    -moz-transform: rotate(45deg) translate(-5px, -4px);
+    -o-transform: rotate(45deg) translate(-5px, -4px);
+    -ms-transform: rotate(45deg) translate(-5px, -4px);
+    transform: rotate(45deg) translate(-5px, -4px);
+}
+
+.reverse-animate .bar1 {
+    -webkit-transform: rotate(45deg)translate(11px, -8px);
+    -moz-transform: rotate(45deg)translate(11px, -8px);
+    -o-transform: rotate(45deg)translate(11px, -8px);
+    -ms-transform: rotate(45deg)translate(11px, -8px);
+    transform: rotate(45deg)translate(11px, -8px);
+
+}
+
+.content-banner {
+    top: 180px;
+    height: 400px;
+    position: relative;
+}
+
+.content-banner img {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    animation: opacity ease-in 5500ms;
+    animation-fill-mode: forwards;
+    object-fit: contain;
+}
+
+.content-banner span {
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 99;
+    width: 541px;
+    font-size: 90px;
+    position: absolute;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -65%);
+}
+
+.slides,
+.slide {
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+}
+
+.slides {
+    position: absolute;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1000ms;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+
+.slide:nth-of-type(1) {
+    background-image: url(images/slide1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide:nth-of-type(2) {
+    background-image: url(images/slide2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide:nth-of-type(3) {
+    background-image: url(images/slide3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.events-boxes {
+    position: relative;
+    width: 65%;
+    height: 500px;
+    margin: 30px auto;
+    top: 200px;
+}
+.stripe1,
+.stripe2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    height: 5px;
+    background-color: rgb(160, 42, 42, 0.7);
+
+}
+.stripe1 {
+    top: 1000px;
+}
+.stripe2 {
+    top: 800px;
+}
+.content{
+    overflow: hidden;
+    height: 1300px;
+    
+}
+
+.sales {
+    position: relative;
+    margin: 0 20px 20px 0;
+    height: 460px;
+    width: 300px;
+    outline: 20px solid rgba(102, 101, 101, 0.5);
+    background-color: rgba(102, 101, 101, 0.5)
+}
+
+.sales a {
+    display: block;
+    margin: 0 0 10px 0;
+    text-decoration: none;
+    background-color: rgb(187, 48, 48);
+    height: 11%;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue
+}
+.sslides,
+.sslide {
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    height: 93%;
+    width: 100%;
+}
+
+.sslides {
+    position: absolute;
+}
+
+.sslide {
+    outline: 2px dashed rgba(255,255,255,0.8); /* Пунктирная рамка */
+    outline-offset: -10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1000ms;
+}
+
+.sshowing {
+    opacity: 1;
+    z-index: 2;
+}
+.sslide:nth-of-type(1) {
+    background-image: url(images/sales1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sslide:nth-of-type(2) {
+    background-image: url(images/sales2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sslide:nth-of-type(3) {
+    background-image: url(images/sales3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.summer-menu {
+    position: relative;
+    margin: 0 20px 20px 0;
+    height: 460px;
+    width: 300px;
+    outline: 20px solid rgba(102, 101, 101, 0.5);
+    background-color: rgba(102, 101, 101, 0.5);
+    bottom: 480px;
+    left: 60%;
+    width: 300px;
+
+}
+.summer-menu a {
+    text-decoration: none
+}
+.summer-menu span {
+    display: block;
+    height: 11%;
+    background-color: rgb(223, 137, 25);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    margin: 0 0 10px 0;
+    color: aliceblue;
+    text-align: center;
+
+}
+.summerslides,
+.summerslide {
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    height: 93%;
+    width: 100%;
+}
+
+.summerslides {
+    position: absolute;
+    
+}
+
+.summerslide {
+    position: absolute;
+    outline: 2px dashed rgba(255,255,255,0.8); /* Пунктирная рамка */
+    outline-offset: -10px;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1000ms;
+}
+
+.summershowing {
+    opacity: 1;
+    z-index: 2;
+}
+
+
+.summerslide:nth-of-type(1) {
+    background-image: url(images/summerslide1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.summerslide:nth-of-type(2) {
+    background-image: url(images/summerslide2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.summerslide:nth-of-type(3) {
+    background-image: url(images/summerslide3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+footer {
+    position: relative;
+    height: 200px;
+    background-color: rgb(102, 95, 95);
+    width: 100%;
+}
+.footer-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.footer-list li {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+.footer-list a {
+    text-decoration: none; 
+    color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 1060px) {
+    .header {
+        height: 250px;
+    }
+    .menu {
+        display: none;
+    }
+    .calls {
+        display: none;
+    }
+    .recall {
+        position: absolute;
+        left: 5%;
+        top: 0;
+    }
+    .phone {
+        bottom: 10px;
+        left: 5%;
+        font-size: 20px
+    }
+    .content {
+        height: 1800px;
+    }
+    .recall-me-form {
+        top: 0px;
+        left: 5% !important;
+        border-radius: 0 10px 20px 10px !important;
+    }
+    .mi-wrapper {
+        position: absolute;
+        bottom: 0px;
+        background-color: rgb(102, 95, 95);
+        right: 0px;
+        width: 25%;
+        height: 100px;
+    }
+    .menu-icon {
+        display: block;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: relative;
+        float: left;
+    }
+    .cart-icon {
+        top: 30px;
+    }
+    .cart-icon span {
+        right: -130%;
+    }
+    .content-banner {
+        top: 250px;
+    }
+    .events-boxes {
+        top: 270px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .events-boxes {
+        height: 1000px;
+    }
+    .sales {
+        left: 50%;
+        transform: translate(-50%)
+    }
+    .summer-menu {
+        left: 50%;
+        transform: translate(-50%);
+        top: 50px;
+    }
+    .stripe1,
+    .stripe2 {
+        width: 5px;
+        height: 850px;
+        border-radius: 20px;
+    }
+    .stripe1 {
+        left: 15%;
+        top: 750px;
+    }
+    .stripe2 {
+        left: 85%;
+        top: 750px
+    }
+    .cart-icon {
+        width: 60px;
+        left: 75%
+    }
+    .cart-icon span {
+        top: 10px
+    }
+    .logo {
+        width: 15%;
+    }
+}
+@media screen and (max-width: 620px) {
+    .content-banner span {
+        font-size: 60px;
+        text-align: center;
+    }
+    .cart-icon {
+        width: 50px;
+        left: 75%;
+    }
+    .cart-icon span {
+        top: 50px;
+        left: 2px;
+        font-size: 15px
+    }
+    .logo {
+        left: 10%;
+        width: 100px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .sales,
+    .summer-menu {
+        width: 90%;
+        height: 350px;
+    }
+    .stripe1 {
+        left: 7%;
+        height: 670px;
+    }
+    .stripe2 {
+        left: 93%;
+        height: 670px;
+    }
+    .content-banner span {
+        font-size: 50px;
+    }
+    .content {
+        height: 1600px;
+    }
+    .recall-me-form {
+        width: 200px !important;
+    }
+    .footer-list li {
+        margin: 5px;
+    }
+}
+@keyframes opacity {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        animation-timing-function: cubic-bezier(1, -1.55, 1, 1.06);
+    }
+}

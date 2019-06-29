@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pizza</title>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" alt="logo"></a>
+            <span class="calls">ЗВОНКИ БЕСПЛАТНО<br>с мобильных и стационарных</span>
+        </div>
+        <span class="phone">📞 +380900000000</span><button id="recall" class="recall">перезвоните мне</button>
+        <form id="recall-me-form" class="recall-me-form" method="post" action="">
+            <section class="input-section">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+            </section>
+            <section class="input-section">
+                <label for="phone">Телефон</label>
+                <input type="text" id="phone" name="phone" placeholder="Ваш мобильный телефон" required>
+            </section>
+            <input type="submit" class="button2">
+            <span id="close">Close</span>
+        </form>
+        
+        <div class="cart-icon" ><span>Корзина<br>пуста</span></div>
+            <div class="mi-wrapper">
+                <div class="menu-icon" id="menu-i">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="#">Летнее меню</a></li>
+                    <li><a href="Sushi/index.html">Суши</a></li>
+                    <li><a href="#">Салаты</a></li>
+                    <li><a href="#">Супы</a></li>
+                    <li><a href="#">Закуски</a></li>
+                    <li><a href="#">Сэндвичи</a></li>
+                    <li><a href="#">Десерты</a></li>
+                    <li><a href="#">Напитки</a></li>
+                </ul>
+                </div>
+            </div>
+        <nav class="menu">
+            
+            <div class="menu-items">
+                <ul>
+                    <li><a href="#">Летнее меню</a></li>
+                    <li><a href="Sushi/index.html">Суши</a></li>
+                    <li><a href="#">Салаты</a></li>
+                    <li><a href="#">Супы</a></li>
+                    <li><a href="#">Закуски</a></li>
+                    <li><a href="#">Сэндвичи</a></li>
+                    <li><a href="#">Десерты</a></li>
+                    <li><a href="#">Напитки</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="content-banner">
+            <img src="Images/background.png">
+            <ul id="slides" class="slides">
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul> <span>Nice pizza</span>
+        </div>
+        <div class="stripe1"></div>
+        <div class="stripe2"></div>
+        <div class="events-boxes">
+            <div class="sales">
+                <a href="#">акции</a>
+                <ul id="sslides" class="sslides">
+                    <li class="sslide"></li>
+                    <li class="sslide"></li>
+                    <li class="sslide"></li>
+                </ul>
+            </div>
+            <div></div>
+            <div class="summer-menu">
+                <a href="#">
+                    <span>Летнее меню</span>
+                    <ul id="summerslides" class="summerslides">
+                        <li class="summerslide"></li>
+                        <li class="summerslide"></li>
+                        <li class="summerslide"></li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="footer-list">
+            <li><a href="#">Летнее меню</a></li>
+            <li><a href="Sushi/index.html">Суши</a></li>
+            <li><a href="#">Салаты</a></li>
+            <li><a href="#">Супы</a></li>
+            <li><a href="#">Закуски</a></li>
+            <li><a href="#">Сэндвичи</a></li>
+            <li><a href="#">Десерты</a></li>
+            <li><a href="#">Напитки</a></li>
+        </ul>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            "use strict";
+            var $menuIcon = $(".menu-icon");
+
+            $menuIcon.click(function () {
+                $(this).toggleClass("animate");
+            });
+        });
+        
+    </script>
+    <script>
+        var slides = document.querySelectorAll('#slides .slide');
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide, 5000);
+
+        function nextSlide() {
+            slides[currentSlide].className = 'slide';
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].className = 'slide showing';
+        }
+    </script>
+    <script>
+        var sslides = document.querySelectorAll('#sslides .sslide');
+        var currentSSlide = 0;
+        var sslideInterval = setInterval(nextSSlide, 3000);
+
+        function nextSSlide() {
+            sslides[currentSSlide].className = 'sslide';
+            currentSSlide = (currentSSlide + 1) % sslides.length;
+            sslides[currentSSlide].className = 'sslide sshowing';
+        }
+    </script>
+    <script>
+        var summerslides = document.querySelectorAll('#summerslides .summerslide');
+        var currentSummerSlide = 0;
+        var summerslideInterval = setInterval(nextSummerSlide, 3000);
+
+        function nextSummerSlide() {
+            summerslides[currentSummerSlide].className = 'summerslide';
+            currentSummerSlide = (currentSummerSlide + 1) % summerslides.length;
+            summerslides[currentSummerSlide].className = 'summerslide summershowing';
+        }
+    </script>
+    <script>
+        var button = document.getElementById("recall");
+        button.addEventListener("click", showForm);
+
+        function showForm() {
+            var form = document.getElementById("recall-me-form");
+            form.style.display = "block";
+            var closeButton = document.getElementById("close").addEventListener("click", function () {
+                form.style.display = "none";
+            });
+        }
+    </script>
+    <script>
+        jQuery(function ($) {
+            $(document).mouseup(function (e) { // событие клика по веб-документу
+                var div = $("#recall-me-form"); // тут указываем ID элемента
+                if (!div.is(e.target) // если клик был не по нашему блоку
+                    &&
+                    div.has(e.target).length === 0) { // и не по его дочерним элементам
+                    div.hide(); // скрываем его
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
