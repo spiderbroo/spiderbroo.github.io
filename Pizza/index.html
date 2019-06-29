@@ -133,7 +133,7 @@
             });
         });
     </script>
-     <script>
+    <script>
         $(document).ready(function () {
             "use strict";
             var $menuIcon = $(".menu-icon");
@@ -154,6 +154,28 @@
             currentSlide = (currentSlide + 1) % slides.length;
             slides[currentSlide].className = 'slide showing';
         }
+    </script>
+    <script>
+        var summerslides = document.querySelectorAll('#summerslides .summerslide');
+var currentSummerSlide = 0;
+var summerslideInterval = setInterval(nextSummerSlide, 3000);
+
+function nextSummerSlide() {
+    summerslides[currentSummerSlide].className = 'summerslide';
+    currentSummerSlide = (currentSummerSlide + 1) % summerslides.length;
+    summerslides[currentSummerSlide].className = 'summerslide summershowing';
+}
+    </script>
+    <script>
+        var sslides = document.querySelectorAll('#sslides .sslide');
+var currentSSlide = 0;
+var sslideInterval = setInterval(nextSSlide, 3000);
+
+function nextSSlide() {
+    sslides[currentSSlide].className = 'sslide';
+    currentSSlide = (currentSSlide + 1) % sslides.length;
+    sslides[currentSSlide].className = 'sslide sshowing';
+}
     </script>
 </body>
 

@@ -388,7 +388,7 @@
     left: 0px;
     top: 0px;
     opacity: 0;
-    z-index: 1;
+    z-index: 50;
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
     -o-transition: opacity 1s;
