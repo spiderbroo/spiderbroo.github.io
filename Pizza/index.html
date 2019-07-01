@@ -31,7 +31,7 @@
         </form>
 
         <div class="cart-icon"><span>Корзина<br>пуста</span></div>
-        <div class="mi-wrapper"  >
+        <div class="mi-wrapper">
             <div class="menu-icon" id="menu-i" onclick="openbox('mobilemenu'); return false">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -185,6 +185,28 @@
                 document.getElementById('mobilemenu').style.display = 'none';
             }
         }
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            //E-mail Ajax Send
+            $("contact-me-form").submit(function () { //Change
+                var th = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: "contact-form.php", //Change
+                    data: th.serialize()
+                }).done(function () {
+                    alert("Thank you!");
+                    setTimeout(function () {
+                        // Done Functions
+                        th.trigger("reset");
+                    }, 1000);
+                });
+                return false;
+            });
+
+        });
     </script>
 </body>
 
