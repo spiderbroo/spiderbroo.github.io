@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Pizza</title>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
@@ -31,11 +32,14 @@
 
         <div class="cart-icon"><span>Корзина<br>пуста</span></div>
         <div class="mi-wrapper">
-            <div class="menu-icon" id="menu-i">
+                <div class="menu-icon" id="menu-i" onclick="openbox('mobilemenu'); return false">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
-                <ul class="mobile-menu">
+                
+            </div>
+            <ul class="mobile-menu" id="mobilemenu" style="display: none;">
+                        <li><a href="../index.html">Главная</a></li>
                     <li><a href="../Летнее меню/index.html">Летнее меню</a></li>
                     <li><a href="../Суши/index.html">Суши</a></li>
                     <li><a href="../Салаты/index.html">Салаты</a></li>
@@ -45,7 +49,6 @@
                     <li><a href="index.html">Десерты</a></li>
                     <li><a href="../Напитки/index.html">Напитки</a></li>
                 </ul>
-            </div>
         </div>
         <nav class="menu">
 
@@ -116,7 +119,7 @@
             });
         });
     </script>
-    <script>
+  <script>
         $(document).ready(function () {
             "use strict";
             var $menuIcon = $(".menu-icon");
@@ -126,6 +129,16 @@
             });
         });
     </script>
+    <script>
+            function openbox(mobilemenu) {
+                display = document.getElementById('mobilemenu').style.display;
+                if (display == 'none') {
+                    document.getElementById('mobilemenu').style.display = 'block';
+                } else {
+                    document.getElementById('mobilemenu').style.display = 'none';
+                }
+            }
+        </script>
     <script>
         var slides = document.querySelectorAll('#slides .slide');
         var currentSlide = 0;
@@ -138,3 +151,4 @@
         }
     </script>
 </body>
+</html>
