@@ -1,0 +1,20 @@
+div {
+    position: relative;
+    background-image: url(https://i.ibb.co/pvDHhTb/photo-2020-01-05-14-36-26.jpg);
+    background-size: 100%;
+    width: 30%;
+    background-repeat: no-repeat;
+    padding-top: 22%;
+    left:50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+}
+
+div:hover::after {
+    background-image: url(https://i.ibb.co/stSpdQX/photo-2020-01-05-14-36-41.png);
+    background-size: 100%;
+    position: absolute;
+    content: '';
+    padding-top: 75%;
+    width: 100%;
+}
