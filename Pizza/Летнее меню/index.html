@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Pizza</title>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
 </head>
 
 <body>
@@ -29,60 +30,32 @@
             <input type="submit" class="button2">
             <span id="close">Close</span>
         </form>
-        
-        <div class="cart-icon" ><span>Корзина<br>пуста</span></div>
+
+        <div class="cart-icon"><span>Корзина<br>пуста</span></div>
         <div class="mi-wrapper">
-                <div class="menu-icon" id="menu-i" onclick="openbox('mobilemenu'); return false">
+            <div class="menu-icon" id="menu-i" onclick="openbox('mobilemenu'); return false">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
-                
+
             </div>
             <ul class="mobile-menu" id="mobilemenu" style="display: none;">
-                        <li><a href="../index.html">Главная</a></li>
-                    <li><a href="../Летнее меню/index.html">Летнее меню</a></li>
-                    <li><a href="../Суши/index.html">Суши</a></li>
-                    <li><a href="../Салаты/index.html">Салаты</a></li>
-                    <li><a href="../Супы/index.html">Супы</a></li>
-                    <li><a href="../Закуски/index.html">Закуски</a></li>
-                    <li><a href="../Сэндвичи/index.html">Сэндвичи</a></li>
-                    <li><a href="index.html">Десерты</a></li>
-                    <li><a href="../Напитки/index.html">Напитки</a></li>
-                </ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../Летнее меню/index.html">Летнее меню</a></li>
+                <li><a href="../Суши/index.html">Суши</a></li>
+                <li><a href="../Салаты/index.html">Салаты</a></li>
+                <li><a href="../Супы/index.html">Супы</a></li>
+                <li><a href="../Закуски/index.html">Закуски</a></li>
+                <li><a href="../Сэндвичи/index.html">Сэндвичи</a></li>
+                <li><a href="index.html">Десерты</a></li>
+                <li><a href="../Напитки/index.html">Напитки</a></li>
+            </ul>
         </div>
         <nav class="menu">
-            
+
             <div class="menu-items">
                 <ul>
-                        <li><a href="../index.html">Главная</a></li>
-                        <li><a href="index.html">Летнее меню</a></li>
-                        <li><a href="../Суши/index.html">Суши</a></li>
-                        <li><a href="../Салаты/index.html">Салаты</a></li>
-                        <li><a href="../Супы/index.html">Супы</a></li>
-                        <li><a href="../Закуски/index.html">Закуски</a></li>
-                        <li><a href="../Сэндвичи/index.html">Сэндвичи</a></li>
-                        <li><a href="../Десерты/index.html">Десерты</a></li>
-                        <li><a href="../Напитки/index.html">Напитки</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main class="content">
-        <div class="content-banner">
-            <img src="Images/background.png">
-            <ul id="slides" class="slides">
-                <li class="slide"></li>
-                <li class="slide"></li>
-                <li class="slide"></li>
-            </ul> <span>Nice pizza</span>
-        </div>
-    </main>
-
-
-
-
-    <footer>
-            <ul class="footer-list">
+                    <li><a href="../index.html">Главная</a></li>
                     <li><a href="index.html">Летнее меню</a></li>
                     <li><a href="../Суши/index.html">Суши</a></li>
                     <li><a href="../Салаты/index.html">Салаты</a></li>
@@ -91,8 +64,63 @@
                     <li><a href="../Сэндвичи/index.html">Сэндвичи</a></li>
                     <li><a href="../Десерты/index.html">Десерты</a></li>
                     <li><a href="../Напитки/index.html">Напитки</a></li>
-            </ul>
-        </footer>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="content-banner">
+            <img src="Images/background.png">
+            <ul id="slides" class="slides">
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul> <span>Nice pizza</span>
+    </div>
+    <div class="topic">
+        <main>Летнее меню</main>
+    </div>
+    <div class="container">
+        <div class="itemsContainer">
+            <div class="items" class="item1">
+                <div class="itemPhoto1"></div>
+                <div class="itemDescription1"></div>
+                <p class="itemName1">Лосось на пару, с овощами</p>
+                <p class="itemPrice1">250</p>
+            </div>
+            <div class="items" class="item2">
+                <div class="itemPhoto2"></div>
+                <div class="itemDescription2"></div>
+                <p class="itemName2">Овощи на пару</p>
+                <p class="itemPrice2">59</p>
+            </div>
+            <div class="items" class="item3">
+                <div class="itemPhoto3"></div>
+                <div class="itemDescription3"></div>
+                <p class="itemName3">Овощной боул</p>
+                <p class="itemPrice3">95</p>
+            </div>
+            <div class="items" class="item4">
+                <div class="itemPhoto4"></div>
+                <div class="itemDescription4"></div>
+                <p class="itemName4">Чиа с манго</p>
+                <p class="itemPrice4">59</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <ul class="footer-list">
+            <li><a href="index.html">Летнее меню</a></li>
+            <li><a href="../Суши/index.html">Суши</a></li>
+            <li><a href="../Салаты/index.html">Салаты</a></li>
+            <li><a href="../Супы/index.html">Супы</a></li>
+            <li><a href="../Закуски/index.html">Закуски</a></li>
+            <li><a href="../Сэндвичи/index.html">Сэндвичи</a></li>
+            <li><a href="../Десерты/index.html">Десерты</a></li>
+            <li><a href="../Напитки/index.html">Напитки</a></li>
+        </ul>
+    </footer>
 
     <script>
         var button = document.getElementById("recall");
@@ -118,7 +146,7 @@
             });
         });
     </script>
-     <script>
+    <script>
         $(document).ready(function () {
             "use strict";
             var $menuIcon = $(".menu-icon");
@@ -127,18 +155,17 @@
                 $(this).toggleClass("animate");
             });
         });
-        
     </script>
-        <script>
-                function openbox(mobilemenu) {
-                    display = document.getElementById('mobilemenu').style.display;
-                    if (display == 'none') {
-                        document.getElementById('mobilemenu').style.display = 'block';
-                    } else {
-                        document.getElementById('mobilemenu').style.display = 'none';
-                    }
-                }
-            </script>
+    <script>
+        function openbox(mobilemenu) {
+            display = document.getElementById('mobilemenu').style.display;
+            if (display == 'none') {
+                document.getElementById('mobilemenu').style.display = 'block';
+            } else {
+                document.getElementById('mobilemenu').style.display = 'none';
+            }
+        }
+    </script>
     <script>
         var slides = document.querySelectorAll('#slides .slide');
         var currentSlide = 0;
@@ -150,5 +177,7 @@
             slides[currentSlide].className = 'slide showing';
         }
     </script>
+
 </body>
+
 </html>
