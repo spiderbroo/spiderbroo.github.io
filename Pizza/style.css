@@ -223,7 +223,7 @@
 .content-banner span {
     font-family: 'Courier New', Courier, monospace;
     z-index: 99;
-    width: 541px;
+    width: 100%;
     font-size: 90px;
     position: absolute;
     left: 50%;
@@ -681,12 +681,12 @@ footer {
 
     .stripe1 {
         left: 15%;
-        top: 700px;
+        top: 50%;
     }
 
     .stripe2 {
         left: 85%;
-        top: 700px
+        top: 50%
     }
 
     .cart-icon {
