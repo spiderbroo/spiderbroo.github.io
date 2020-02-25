@@ -681,12 +681,12 @@ footer {
 
     .stripe1 {
         left: 15%;
-        top: 50%;
+        top: 700px;
     }
 
     .stripe2 {
         left: 85%;
-        top: 50%
+        top: 700px
     }
 
     .cart-icon {
@@ -732,6 +732,10 @@ footer {
     .summer-menu {
         width: 90%;
         height: 350px;
+    }
+    .stripe1,
+    .stripe2 {
+        top: 50%;
     }
 
     .sales a,
