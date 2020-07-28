@@ -1078,11 +1078,11 @@ footer {
     }
     .mobile-menu {
         position: fixed;
-        background-color: #ebebeb;
-        height: 1000px;
+        background-color: #e7edf0;
+        height: 100%;
         width: 100%;
         text-align: center;
-        box-shadow: -10px 10px 20px rgb(105, 105, 105);
+        box-shadow: 0px 10px 10px rgba(105, 105, 105, 0.315);
         z-index: 6;
     }
     .mobile-menu a:first-of-type li {
@@ -1095,11 +1095,13 @@ footer {
     .mobile-menu a {
         display: inline;
         text-decoration: none;
-        color: rgb(207, 117, 0);
+        text-transform: uppercase;
+        font-family: 'Asar', serif;
+        color: #00a5de;
         transition: 100ms;
     }
     .mobile-menu a:hover {
-        color: rgb(83, 56, 21)
+        color: #fc3;
     }
     .hero {
         height: 500px;
