@@ -35,12 +35,17 @@ nav ul li {
     display: inline-block;
     margin-right: 55px;
     line-height: 80px;
-    color: #b8b8b8;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
 }
 nav ul li:hover {
     color: #ff7d57;
+}
+nav ul li a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: #b8b8b8;
 }
 nav ul a:last-of-type li {
     margin-right: 0px;
@@ -159,6 +164,9 @@ footer {
     margin-bottom: 45px;
     cursor: pointer;
     border-radius: 5px;
+    background-image: url(Images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 15px;
 }
 .previous:hover {
     background-color: #e85f37;
