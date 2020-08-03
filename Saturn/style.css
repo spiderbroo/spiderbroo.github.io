@@ -38,7 +38,7 @@ nav ul li {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
 }
-nav ul li:hover {
+nav ul li a:hover {
     color: #ff7d57;
 }
 nav ul li a {
