@@ -24,7 +24,7 @@ nav {
     font-size: 17px;
     color: #000;
 }
-.navBar a:first-of-type li {
+.navBar a:hover li {
     font-weight: bold;
 } 
 .navBar {
