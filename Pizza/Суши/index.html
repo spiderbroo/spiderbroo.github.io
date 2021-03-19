@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pizza</title>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div id="bg_layer"></div>
+        <div class="logo">
+            <a href="../index.html"></a>
+            <span class="calls">ЗВОНКИ БЕСПЛАТНО<br>с мобильных и стационарных</span>
+        </div>
+        <a href="tel:+380900000000"><span class="phone">📞 +380900000000</span></a><button id="recall" class="recall">перезвоните мне</button>
+        <form id="recall-me-form" class="recall-me-form" method="post" action=”contactform.php”>
+            <label for="name">Имя</label>
+            <input type="name" id="name" name="name" placeholder="Ваше имя" required>
+            <label for="phone">Телефон</label>
+            <input type="phone" id="phone" name="phone" placeholder="Ваш мобильный телефон" required>
+        <div id="form_result"></div>
+        <div>
+            <input type="submit" class="button2">
+            <span id="close">Close</span>
+        </div>
+    </form>
+        
+    <button class="cart-icon" id="cart-icon">(<span class="total-count"></span>)</button>
+    <div id="cart" class="cart">
+        <span>Покупки</span>
+        <table class="show-cart">
+        </table>
+        <div class="btnsContainer">
+            <button id="close-cart" class="btn_cart_close">Закрыть</button>
+            <button class="clear-cart btn btn-danger">Очистить</button>
+            <div>Всего: ₴<span class="total-cart"></span></div>
+            <button type="button" id="accept">Обработать заказ</button>
+        </div>
+    </div>
+
+
+        <div class="mi-wrapper">
+                <div class="menu-icon" id="menu-i" onclick="openbox('mobilemenu'); return false">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                
+            </div>
+            <ul class="mobile-menu" id="mobilemenu" style="display: none;">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../Пицца/index.html">Пицца</a></li>
+                    <li><a href="../Летнее меню/index.html">Летнее меню</a></li>
+                    <li><a href="index.html">Суши</a></li>
+                    <li><a href="../Салаты/index.html">Салаты</a></li>
+                    <li><a href="../Супы/index.html">Супы</a></li>
+                    <li><a href="../Закуски/index.html">Закуски</a></li>
+                    <li><a href="../Сэндвичи/index.html">Сэндвичи</a></li>
+                    <li><a href="../Десерты/index.html">Десерты</a></li>
+                    <li><a href="../Напитки/index.html">Напитки</a></li>
+                </ul>
+        </div>
+        <nav class="menu">
+            
+            <div class="menu-items">
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../Пицца/index.html">Пицца</a></li>
+                    <li><a href="../Летнее меню/index.html">Летнее меню</a></li>
+                    <li><a href="index.html">Суши</a></li>
+                    <li><a href="../Салаты/index.html">Салаты</a></li>
+                    <li><a href="../Супы/index.html">Супы</a></li>
+                    <li><a href="../Закуски/index.html">Закуски</a></li>
+                    <li><a href="../Сэндвичи/index.html">Сэндвичи</a></li>
+                    <li><a href="../Десерты/index.html">Десерты</a></li>
+                    <li><a href="../Напитки/index.html">Напитки</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="content-banner">
+            <img src="Images/background.png">
+            <div class="contentSpan">Nice pizza</div>
+            <ul id="slides" class="slides">
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="topic">
+        <main>Суши</main>
+    </div>
+    <div class="container">
+        <div class="itemsContainer">
+            <div class="items" class="item1">
+                <div class="itemPhoto1"><div class="description"><p>Авокадо, икра масаго, креветка Панко, огурец</p><div class="add-to-cart-container"><a href="#" data-name="Калифорния_с_креветкой" data-price="120" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription1"></div>
+                <p class="itemName1">Калифорния с креветкой</p>
+                <p class="itemPrice1">120</p>
+            </div>
+            <div class="items" class="item2">
+                <div class="itemPhoto2"><div class="description"><p>Кайсо маки, Авокадо маки, Филадельфия вега, Каппа маки, Чукка сарада, соус ореховый</p><div class="add-to-cart-container"><a href="#" data-name="Вега_сет" data-price="290" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription2"></div>
+                <p class="itemName2">Вега сет</p>
+                <p class="itemPrice2">290</p>
+            </div>
+            <div class="items" class="item3">
+                <div class="itemPhoto3"><div class="description"><p>Угорь, авокадо, огурец, кунжут, соус "Унаги"</p><div class="add-to-cart-container"><a href="#" data-name="Унаги_маки" data-price="140" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription3"></div>
+                <p class="itemName3">Унаги маки</p>
+                <p class="itemPrice3">140</p>
+            </div>
+            <div class="items" class="item4">
+                <div class="itemPhoto4"><div class="description"><p>Копченый угорь, авокадо, японский омлет, огурец, соус Унаги, кунжут</p><div class="add-to-cart-container"><a href="#" data-name="Зеленый_дракон" data-price="165" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription4"></div>
+                <p class="itemName4">Зеленый дракон</p>
+                <p class="itemPrice4">165</p>
+            </div>
+            <div class="items" class="item5">
+                <div class="itemPhoto5"><div class="description"><p>Лосось, соус «Спайси», кунжут</p><div class="add-to-cart-container"><a href="#" data-name="Саке_спайси_маки" data-price="169" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription5"></div>
+                <p class="itemName5">Саке спайси маки</p>
+                <p class="itemPrice5">169</p>
+            </div>
+            <div class="items" class="item6">
+                <div class="itemPhoto6"><div class="description"><p>Копченый угорь, снежный краб, огурец, соус Яки, соус Унаги, кунжут</p><div class="add-to-cart-container"><a href="#" data-name="Золотой_дракон" data-price="199" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription6"></div>
+                <p class="itemName6">Золотой дракон</p>
+                <p class="itemPrice6">199</p>
+            </div>
+            <div class="items" class="item7">
+                <div class="itemPhoto7"><div class="description"><p>Филадельфия каникама маки, Филадельфия грин, Унаги хит, Сакана маки</p><div class="add-to-cart-container"><a href="#" data-name="Сливочный_сет" data-price="499" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription7"></div>
+                <p class="itemName7">Сливочный сет</p>
+                <p class="itemPrice7">499</p>
+            </div>
+            <div class="items" class="item8">
+                <div class="itemPhoto8"><div class="description"><p>Филадельфия лайт, Саке кани маки, Тори маки, Унаги хит, Чукка cарада, соус ореховый</p><div class="add-to-cart-container"><a href="#" data-name="Микс_сет" data-price="649" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription8"></div>
+                <p class="itemName8">Микс сет</p>
+                <p class="itemPrice8">649</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+            <ul class="footer-list">
+                <li><a href="../Пицца/index.html">Пицца</a></li>
+                <li><a href="../Летнее меню/index.html">Летнее меню</a></li>
+                <li><a href="index.html">Суши</a></li>
+                <li><a href="../Салаты/index.html">Салаты</a></li>
+                <li><a href="../Супы/index.html">Супы</a></li>
+                <li><a href="../Закуски/index.html">Закуски</a></li>
+                <li><a href="../Сэндвичи/index.html">Сэндвичи</a></li>
+                <li><a href="../Десерты/index.html">Десерты</a></li>
+                <li><a href="../Напитки/index.html">Напитки</a></li>
+            </ul>
+        </footer>
+
+        <script src="../script.js"></script>
+</body>
+</html>

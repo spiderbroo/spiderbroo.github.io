@@ -1,0 +1,137 @@
+.topic {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    top: 149px;
+    background-color: rgb(245, 37, 37);
+    padding-top: 5px;
+    margin-bottom: 50px;
+}
+.topic > main {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.container {
+    width: 80%;
+    position: relative;
+    top: 149px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.itemsContainer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.items {
+    background-color:  rgb(255, 255, 255);
+    border: 2px solid white;
+    box-shadow: -10px 10px 20px rgba(0,0,0,0.3);
+    margin: 20px;
+    width: 300px;
+}
+.itemPhoto1 {
+    background-image: url(Images/Item1.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    margin-bottom: 15px;
+}
+.itemName1 {
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.itemPrice1 {
+    float: right;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.itemPhoto2 {
+    background-image: url(Images/Item2.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    margin-bottom: 15px;
+}
+.itemName2 {
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.itemPrice2 {
+    float: right;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.itemPhoto3 {
+    background-image: url(Images/Item3.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    margin-bottom: 15px;
+}
+.itemName3 {
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.itemPrice3 {
+    float: right;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.itemPhoto4 {
+    background-image: url(Images/Item4.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    margin-bottom: 15px;
+}
+.itemName4 {
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.itemPrice4 {
+    float: right;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.itemName1, .itemName2, .itemName3, .itemName4 {
+    font-family: 'El Messiri', sans-serif;
+}
+.itemPrice1, .itemPrice2, .itemPrice3, .itemPrice4 {
+    font-size: 25px;
+    font-family: 'El Messiri', sans-serif;
+}
+@media screen and (max-width: 400px) {
+    .itemPhoto1, .itemPhoto2, 
+    .itemPhoto3, .itemPhoto4 {
+
+    }
+
+    .items {
+        margin: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}

@@ -1,0 +1,207 @@
+.topic {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    top: 149px;
+    background-color: rgb(245, 37, 37);
+    padding-top: 5px;
+    margin-bottom: 50px;
+}
+.topic > main {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.container {
+    width: 80%;
+    top: 140px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.itemsContainer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.items {
+    background-color:  rgb(255, 255, 255);
+    border: 2px solid white;
+    box-shadow: -10px 10px 20px rgba(0,0,0,0.3);
+    margin: 20px;
+    width: 300px;
+}
+.itemPhoto1 {
+    background-image: url(Images/Item1.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-bottom: 15px;
+}
+.itemName1 {
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.itemPrice1 {
+    float: right;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.itemPhoto2 {
+    background-image: url(Images/Item2.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-bottom: 15px;
+}
+.itemName2 {
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.itemPrice2 {
+    float: right;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.itemPhoto3 {
+    background-image: url(Images/Item3.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-bottom: 15px;
+}
+.itemName3 {
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.itemPrice3 {
+    float: right;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.itemPhoto4 {
+    background-image: url(Images/Item4.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+}
+.itemName4 {
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.itemPrice4 {
+    float: right;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.itemPhoto5 {
+    background-image: url(Images/Item5.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+}
+.itemName5 {
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.itemPrice5 {
+    float: right;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.itemPhoto6 {
+    background-image: url(Images/Item6.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    margin-bottom: 15px;
+}
+.itemName6 {
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.itemPrice6 {
+    float: right;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.itemPhoto7 {
+    background-image: url(Images/Item7.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+}
+.itemName7 {
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.itemPrice7 {
+    float: right;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.itemPhoto8 {
+    background-image: url(Images/Item8.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+}
+.itemName8 {
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.itemPrice8 {
+    float: right;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.itemName1, .itemName2, .itemName3, .itemName4, .itemName5,
+.itemName6, .itemName7, .itemName8 {
+    font-family: 'El Messiri', sans-serif;
+}
+.itemPrice1, .itemPrice2, .itemPrice3, .itemPrice4, .itemPrice5,
+.itemPrice6, .itemPrice7, .itemPrice8{
+    font-size: 25px;
+    font-family: 'El Messiri', sans-serif;
+}
+@media screen and (max-width: 400px) {
+    .items {
+        margin: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}

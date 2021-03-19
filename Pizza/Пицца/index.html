@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pizza</title>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div id="bg_layer"></div>
+        <div class="logo">
+            <a href="../index.html"></a>
+            <span class="calls">ЗВОНКИ БЕСПЛАТНО<br>с мобильных и стационарных</span>
+        </div>
+        <a href="tel:+380900000000"><span class="phone">📞 +380900000000</span></a><button id="recall"
+            class="recall">перезвоните мне</button>
+        <form id="recall-me-form" class="recall-me-form" method="post" action=”contactform.php”>
+            <label for="name">Имя</label>
+            <input type="name" id="name" name="name" placeholder="Ваше имя" required>
+            <label for="phone">Телефон</label>
+            <input type="phone" id="phone" name="phone" placeholder="Ваш мобильный телефон" required>
+            <div id="form_result"></div>
+            <div>
+                <button type="button" id="sendMail" class="button2">Отправить</button>
+                <span id="close">Close</span>
+            </div>
+        </form>
+
+        <button class="cart-icon" id="cart-icon">(<span class="total-count"></span>)</button>
+        <div id="cart" class="cart">
+            <span>Покупки</span>
+            <table class="show-cart">
+            </table>
+            <div class="btnsContainer">
+                <button id="close-cart" class="btn_cart_close">Закрыть</button>
+                <button class="clear-cart btn btn-danger">Очистить</button>
+                <div>Всего: ₴<span class="total-cart"></span></div>
+                <button type="button" id="accept">Обработать заказ</button>
+            </div>
+        </div>
+    
+        <div class="mi-wrapper">
+            <div class="menu-icon" id="menu-i" onclick="openbox('mobilemenu'); return false">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+
+            </div>
+            <ul class="mobile-menu" id="mobilemenu" style="display: none;">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="index.html">Пицца</a></li>
+                <li><a href="../Летнее меню/index.html">Летнее меню</a></li>
+                <li><a href="../Суши/index.html">Суши</a></li>
+                <li><a href="../Салаты/index.html">Салаты</a></li>
+                <li><a href="../Супы/index.html">Супы</a></li>
+                <li><a href="../Закуски/index.html">Закуски</a></li>
+                <li><a href="../Сэндвичи/index.html">Сэндвичи</a></li>
+                <li><a href="../Десерты/index.html">Десерты</a></li>
+                <li><a href="../Напитки/index.html">Напитки</a></li>
+            </ul>
+        </div>
+        <nav class="menu">
+
+            <div class="menu-items">
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="index.html">Пицца</a></li>
+                    <li><a href="../Летнее меню/index.html">Летнее меню</a></li>
+                    <li><a href="../Суши/index.html">Суши</a></li>
+                    <li><a href="../Салаты/index.html">Салаты</a></li>
+                    <li><a href="../Супы/index.html">Супы</a></li>
+                    <li><a href="../Закуски/index.html">Закуски</a></li>
+                    <li><a href="../Сэндвичи/index.html">Сэндвичи</a></li>
+                    <li><a href="../Десерты/index.html">Десерты</a></li>
+                    <li><a href="../Напитки/index.html">Напитки</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="content-banner">
+            <img src="Images/background.png">
+            <div class="contentSpan">Nice pizza</div>
+            <ul id="slides" class="slides">
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul> 
+        </div>
+    </main>
+
+
+    <div class="topic">
+        <main>Пицца</main>
+    </div>
+    <div class="container">
+        <div class="itemsContainer">
+            <div class="items" class="item1">
+                <div class="itemPhoto1"><div class="description"><p>Моцарелла, рикотта, руккола, твердый сыр, креветки, томаты черри</p><div class="add-to-cart-container"><a href="#" data-name="Пицца_с_креветками" data-price="199" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription1"></div>
+                <p class="itemName1">Пицца с креветками</p>
+                <p class="itemPrice1">199</p>
+            </div>
+            <div class="items" class="item2">
+                <div class="itemPhoto2"><div class="description"><p>Курица, моцарелла, болгарский перец, сливочный соус, цукини, томаты черри</p><div class="add-to-cart-container"><a href="#" data-name="Пицца_с_овощами_и_курицей" data-price="169" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription2"></div>
+                <p class="itemName2">Пицца с овощами и курицей</p>
+                <p class="itemPrice2">169</p>
+            </div>
+            <div class="items" class="item3">
+                <div class="itemPhoto3"><div class="description"><p>Моцарелла, салями, томатный соус, базилик</p><div class="add-to-cart-container"><a href="#" data-name="Пепперони" data-price="169" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription3"></div>
+                <p class="itemName3">Пепперони</p>
+                <p class="itemPrice3">169</p>
+            </div>
+            <div class="items" class="item4">
+                <div class="itemPhoto4"><div class="description"><p>Моцарелла, шампиньоны, болгарский перец, брокколи, цукини, томаты черри</p><div class="add-to-cart-container"><a href="#" data-name="Вегетарианская" data-price="149" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription4"></div>
+                <p class="itemName4">Вегетарианская</p>
+                <p class="itemPrice4">149</p>
+            </div>
+            <div class="items" class="item5">
+                <div class="itemPhoto5"><div class="description"><p>Моцарелла, базилик, розмарин, томаты черри, лук</p><div class="add-to-cart-container"><a href="#" data-name="Капрезе" data-price="179" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription5"></div>
+                <p class="itemName5">Капрезе</p>
+                <p class="itemPrice5">179</p>
+            </div>
+            <div class="items" class="item6">
+                <div class="itemPhoto6"><div class="description"><p>Шампиньоны, сыр твердый, помидоры, лук, болгарский перец, зелень</p><div class="add-to-cart-container"><a href="#" data-name="Пицца_с_грибами" data-price="159" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription6"></div>
+                <p class="itemName6">Пицца с грибами</p>
+                <p class="itemPrice6">159</p>
+            </div>
+            <div class="items" class="item7">
+                <div class="itemPhoto7"><div class="description"><p>Оливки, бекон, ветчина, шампиньоны, салями, колбаски охотничьи, петрушка, помидор, соус томатный, сыр моцарелла</p><div class="add-to-cart-container"><a href="#" data-name="Карне" data-price="169" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription7"></div>
+                <p class="itemName7">Карне</p>
+                <p class="itemPrice7">169</p>
+            </div>
+            <div class="items" class="item8">
+                <div class="itemPhoto8"><div class="description"><p>Моцарелла, филе куриное, помидор, лук, томатный соус</p><div class="add-to-cart-container"><a href="#" data-name="Нью-Йорк" data-price="169" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription8"></div>
+                <p class="itemName8">Нью-Йорк</p>
+                <p class="itemPrice8">169</p>
+            </div>
+            <div class="items" class="item9">
+                <div class="itemPhoto9"><div class="description"><p>Курица гриль, моцарелла, лук, шампиньоны, томаты, BBQ</p><div class="add-to-cart-container"><a href="#" data-name="BBQ_с_курицей" data-price="159" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription9"></div>
+                <p class="itemName9">BBQ с курицей</p>
+                <p class="itemPrice9">159</p>
+            </div>
+            <div class="items" class="item10">
+                <div class="itemPhoto10"><div class="description"><p>Соус томатный, моцарелла, соус песто</p><div class="add-to-cart-container"><a href="#" data-name="Маргарита" data-price="169" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription10"></div>
+                <p class="itemName10">Маргарита</p>
+                <p class="itemPrice10">169</p>
+            </div>
+            <div class="items" class="item11">
+                <div class="itemPhoto11"><div class="description"><p>Томатный соус, моцарелла, курица, ананас, базилик</p><div class="add-to-cart-container"><a href="#" data-name="Гавайская" data-price="159" class="add-to-cart"><span>Добавить в корзину</span></a></div></div></div>
+                <div class="itemDescription11"></div>
+                <p class="itemName11">Гавайская</p>
+                <p class="itemPrice11">159</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <ul class="footer-list">
+            <li><a href="index.html">Пицца</a></li>
+            <li><a href="../Летнее меню/index.html">Летнее меню</a></li>
+            <li><a href="../Суши/index.html">Суши</a></li>
+            <li><a href="../Салаты/index.html">Салаты</a></li>
+            <li><a href="../Супы/index.html">Супы</a></li>
+            <li><a href="../Закуски/index.html">Закуски</a></li>
+            <li><a href="../Сэндвичи/index.html">Сэндвичи</a></li>
+            <li><a href="../Десерты/index.html">Десерты</a></li>
+            <li><a href="../Напитки/index.html">Напитки</a></li>
+        </ul>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
