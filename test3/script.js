@@ -77,9 +77,10 @@ function searchUniversities() {
 
 clearFormBtn.addEventListener('click', clearAll, false);
 function clearAll() {
-    container.innerHTML = null
-    countryTitle.innerHTML = null
-    country.value = ""
+    container.innerHTML = null;
+    countryTitle.innerHTML = null;
+    country.value = "";
+    checkedUni.innerHTML = 0;
     // JSON.stringify(country.value, function(value) {
     //     if(value !== "") {
     //         country.value = "";
